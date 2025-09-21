@@ -1,6 +1,6 @@
 ---
 title: "Making Snake Case More Convenient"
-excerpt: "This one's for you C, C++, and Python programmers"
+description: "This one's for you C, C++, and Python programmers"
 date: "2023-08-26"
 tags:
   - Python
