@@ -1,5 +1,5 @@
 baseURL: "https://mrt.dev"
-title: MRT's Blog
+title: MisterTea's Blog
 theme: [ "hugo-notice", "PaperMod" ]
 
 enableRobotsTXT: true
@@ -13,14 +13,24 @@ minify:
 
 params:
   homeInfoParams:
-    Title: "MRT's Blog :wave:"
-    Content: "My thoughts on programming"
+    Title: "MisterTea's Blog :wave:"
+    Content: "Hello. I'm Michael R. Taylor, MRT (MisterTea), and I've been a professional software engineer for over 20 years. Here are my thoughts on various things in the industry."
 
   socialIcons:
     - name: github
       url: "https://github.com/michael-taylor"
     - name: gitlab
       url: "https://invent.kde.org/mtaylor"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/michaelrichardtaylor/"
+    - name: steam
+      url: "https://steamcommunity.com/id/mrteng79/"
+    - name: gog
+      url: "https://www.gog.com/u/MisterTea2004"
+    - name: xbox
+      url: "https://www.xbox.com/en-US/play/user/MisterTea04"
+    - name: discord
+      url: "https://discordapp.com/users/mister.tea2004"
 
   env: production
   keywords: [Blog, Portfolio, Programming, Software Engineering]
@@ -52,10 +62,14 @@ menu:
       name: Tags
       url: /tags/
       weight: 10
+    - identifier: about
+      name: About me
+      url: /about/
+      weight: 20
     - identifier: search
       name: Search
       url: /search/
-      weight: 20
+      weight: 30
 
 pygmentsUseClasses: true
 markup:
