@@ -1,0 +1,69 @@
+baseURL: "https://mrt.dev"
+title: MRT's Blog
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+enableEmoji: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  homeInfoParams:
+    Title: "MRT's Blog :wave:"
+    Content: "My thoughts on programming"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/michael-taylor"
+    - name: gitlab
+      url: "https://invent.kde.org/mtaylor"
+
+  env: production
+  keywords: [Blog, Portfolio, Programming, Software Engineering]
+  author: Michael
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  UseHugoToc: true
+  disableScrollToTop: false
+  showtoc: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 10
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 20
+
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
