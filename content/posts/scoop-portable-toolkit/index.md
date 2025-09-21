@@ -16,8 +16,9 @@ Scoop is a command-line installer for Windows. It is created from Powershell scr
 
 Scoop stores configuration data that should persist between software updates in a persistent data directory. This directory is an excellent candidate to store in a private repository somewhere.
 
-> [!NOTE]
-> Of course, this repository can be public. I tend to store license/registration keys in this directory, so I made mine private.
+{{< notice note >}}
+Of course, this repository can be public. I tend to store license/registration keys in this directory, so I made mine private.
+{{< /notice >}}
 
 ## Creating your toolkit
 

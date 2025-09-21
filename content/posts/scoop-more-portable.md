@@ -1,6 +1,6 @@
 ---
 title: "Making the Portable Toolkit More Portable"
-excerpt: "How to handle minor differences in configuration files between computers."
+description: "How to handle minor differences in configuration files between computers."
 date: "2023-08-18"
 tags:
   - Scoop
@@ -42,8 +42,9 @@ foreach ($f in $files) {
 
 In this case, it uses the environment variable **USERPROFILE** to determine the home directory, which is a string that should be genericized. These strings are replaced with the placeholder **%USERPROFILE%**.
 
-> [!NOTE]
-> It is important to remember that on Windows, both '/' and '\\' can be used for directory path separators. That, along with case insensitivity, must be accounted for.
+{{< notice note >}}
+It is important to remember that on Windows, both '/' and '\\' can be used for directory path separators. That, along with case insensitivity, must be accounted for.
+{{< /notice >}}
 
 When any configuration changes are made, re-run the compact script to update the template file and then commit the changes.
 
@@ -62,8 +63,9 @@ foreach ($f in $files) {
 }
 ```
 
-> [!NOTE]
-> Note that Unix-style directory separators are used. I find that these cause fewer problems since they won't need to be escaped ever.
+{{< notice note >}}
+Note that Unix-style directory separators are used. I find that these cause fewer problems since they won't need to be escaped ever.
+{{< /notice >}}
 
 ## Summary
 
