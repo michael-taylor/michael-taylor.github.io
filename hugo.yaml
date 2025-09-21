@@ -1,6 +1,6 @@
 baseURL: "https://mrt.dev"
 title: MRT's Blog
-theme: PaperMod
+theme: [ "hugo-notice", "PaperMod" ]
 
 enableRobotsTXT: true
 buildDrafts: false
