@@ -1,6 +1,7 @@
 ---
-title: "Making Snake Case More Convenient"
-description: "This one's for you C, C++, and Python programmers"
+title: "Making Snake Case More Convenient on Windows"
+description: "This one's for you C, C++, and Python programmers on Windows"
+summary: "Use Shift+Space to quickly type underscores on Windows"
 date: "2023-08-26"
 tags:
   - Python
@@ -10,7 +11,11 @@ tags:
   - Developer Tips
 ---
 
-One thing that I've always hated about snake_case naming style is that I've always found typing an underscore (_) to be an awkward keystroke. The best thing that I've done to make snake_case typing easier is to use [AutoHotkey](https://www.autohotkey.com/) to create a hotkey to insert an underscore when typing Shift-Space. Here is the AutoHotkey script:
+{{< notice note >}}
+If you are on Linux, see this [post]({{% relref "easy-snake-case-linux" %}}) instead.
+{{< /notice >}}
+
+One thing that I've always hated about snake_case naming style is that I've always found typing an underscore (_) to be an awkward keystroke. The best thing that I've done to make snake_case typing easier is to use [AutoHotkey](https://www.autohotkey.com/) to create a hotkey to insert an underscore when typing <kbd><kbd>SHIFT</kbd>+<kbd>SPACE</kbd></kbd>. Here is the AutoHotkey script:
 
 ```autohotkey
 ; Make typing the underscore '_' easier for snake_case_names while programming (now Shift+SpaceBar)
