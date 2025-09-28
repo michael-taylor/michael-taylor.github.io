@@ -25,10 +25,10 @@ params:
       url: "https://www.linkedin.com/in/michaelrichardtaylor/"
     - name: steam
       url: "https://steamcommunity.com/id/mrteng79/"
-    # - name: gog
-    #   url: "https://www.gog.com/u/MisterTea2004"
-    # - name: xbox
-    #   url: "https://www.xbox.com/en-US/play/user/MisterTea04"
+    - name: gog
+      url: "https://www.gog.com/u/MisterTea2004"
+    - name: xbox
+      url: "https://www.xbox.com/en-US/play/user/MisterTea04"
     - name: discord
       url: "https://discordapp.com/users/mister.tea2004"
 
