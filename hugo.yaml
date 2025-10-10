@@ -62,14 +62,18 @@ menu:
       name: Tags
       url: /tags/
       weight: 10
+    - identifier: useful
+      name: Useful stuff
+      url: /useful/
+      weight: 20
     - identifier: about
       name: About me
       url: /about/
-      weight: 20
+      weight: 30
     - identifier: search
       name: Search
       url: /search/
-      weight: 30
+      weight: 40
 
 pygmentsUseClasses: true
 markup:
