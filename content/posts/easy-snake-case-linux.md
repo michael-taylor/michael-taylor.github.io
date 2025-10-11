@@ -11,6 +11,10 @@ tags:
   - Developer Tips
 ---
 
+{{< notice warning >}}
+Update: **keyd** introduces a suprising behavior with <kbd>SHIFT</kbd> keys. See [this post]({{% relref "keyd-right-shift-fix" %}}) for a fix.
+{{< /notice >}}
+
 {{< notice note >}}
 If you are on Windows, see this [post]({{% relref "easy-snake-case-windows" %}}) instead.
 {{< /notice >}}
