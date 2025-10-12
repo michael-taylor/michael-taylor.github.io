@@ -43,7 +43,7 @@
 
   <h1 class="home-title">
     {{- with $profile.title -}}
-      {{- . | safeHTML -}}
+      {{- . | emojify | safeHTML -}}
     {{- end -}}
   </h1>
 
@@ -54,7 +54,7 @@
         {{- $.Store.Set "hasTyped" true -}}
         <span class="typeit"><template>{{ . | safeHTML }}</template></span>
       {{- else -}}
-        {{- . | safeHTML -}}
+        {{- . | emojify | safeHTML -}}
       {{- end -}}
     </p>
   {{- end -}}
@@ -119,7 +119,7 @@
 
   {{- with $profile.disclaimer -}}
     <h3 class="home-disclaimer">
-      {{- . | safeHTML -}}
+      {{- . | emojify | safeHTML -}}
     </h3>
   {{- end -}}
 

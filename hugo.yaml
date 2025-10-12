@@ -16,7 +16,7 @@ params:
     profile:
       enable: true
       social: true
-      title: "MisterTea's Blog :wave:"
+      title: ":wave: MisterTea's Blog"
       disclaimer: "Hello. I'm Michael R. Taylor, MRT (MisterTea), and I've been a professional software engineer for over 20 years. Here are my thoughts on various things in the industry."
       avatarURL: /images/profile.png
 
