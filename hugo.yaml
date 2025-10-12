@@ -47,11 +47,13 @@ params:
       id: MisterTea2004
       icon:
         simpleicons: gogdotcom
+      prefix: https://www.gog.com/u/
       weight: 5
     xbox: 
       id: MisterTea04
       icon:
         simpleicons: xbox
+      prefix: https://www.xbox.com/play/user/
       weight: 6
     youtubechannel:
       id: "@MisterTea04"
@@ -61,7 +63,7 @@ params:
       id: mister.tea2004
       weight: 8
     bluesky:
-      id: atomic.city
+      id: mistertea2004.bsky.social
       weight: 9
     telegram:
       id: mistertea04

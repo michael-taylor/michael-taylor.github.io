@@ -26,7 +26,7 @@ I'm not very active on most social media, but I almost always have my Discord an
 | ------- | ------- |
 | Discord | mister.tea2004 |
 | Telegram | https://t.me/mistertea04 |
-| Bluesky | https://bsky.app/profile/atomic.city |
+| Bluesky | https://bsky.app/profile/mistertea2004.bsky.social |
 
 ### Where does "MisterTea" come from? It seems so unnecessarily formal.
 
