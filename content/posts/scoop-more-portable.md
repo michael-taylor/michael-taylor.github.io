@@ -42,9 +42,8 @@ foreach ($f in $files) {
 
 In this case, it uses the environment variable **USERPROFILE** to determine the home directory, which is a string that should be genericized. These strings are replaced with the placeholder **%USERPROFILE%**.
 
-{{< notice note >}}
-It is important to remember that on Windows, both '/' and '\\' can be used for directory path separators. That, along with case insensitivity, must be accounted for.
-{{< /notice >}}
+> [!NOTE]
+> It is important to remember that on Windows, both '/' and '\\' can be used for directory path separators. That, along with case insensitivity, must be accounted for.
 
 When any configuration changes are made, re-run the compact script to update the template file and then commit the changes.
 
@@ -63,9 +62,8 @@ foreach ($f in $files) {
 }
 ```
 
-{{< notice note >}}
-Note that Unix-style directory separators are used. I find that these cause fewer problems since they won't need to be escaped ever.
-{{< /notice >}}
+> [!NOTE]
+> Note that Unix-style directory separators are used. I find that these cause fewer problems since they won't need to be escaped ever.
 
 ## Summary
 

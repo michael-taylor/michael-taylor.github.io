@@ -11,13 +11,11 @@ tags:
   - Developer Tips
 ---
 
-{{< notice warning >}}
-Update: **keyd** introduces a suprising behavior with <kbd>SHIFT</kbd> keys. See [this post]({{% relref "keyd-right-shift-fix" %}}) for a fix.
-{{< /notice >}}
+> [!WARNING]
+> Update: **keyd** introduces a suprising behavior with <kbd>SHIFT</kbd> keys. See [this post]({{% relref "keyd-right-shift-fix" %}}) for a fix.
 
-{{< notice note >}}
-If you are on Windows, see this [post]({{% relref "easy-snake-case-windows" %}}) instead.
-{{< /notice >}}
+> [!NOTE]
+> If you are on Windows, see this [post]({{% relref "easy-snake-case-windows" %}}) instead.
 
 In my [last post]({{% relref "easy-snake-case-windows" %}}) (almost *two years* ago, wow), I showed how you can more easily type '_' characters in Windows using the <kbd><kbd>SHIFT</kbd>+<kbd>SPACE</kbd></kbd> key combination. Well, it's just as easy in Linux thanks to [keyd](https://github.com/rvaiya/keyd) curtesy of [rvaiya](https://github.com/rvaiya).
 

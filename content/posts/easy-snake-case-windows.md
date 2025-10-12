@@ -11,9 +11,8 @@ tags:
   - Developer Tips
 ---
 
-{{< notice note >}}
-If you are on Linux, see this [post]({{% relref "easy-snake-case-linux" %}}) instead.
-{{< /notice >}}
+> [!NOTE]
+> If you are on Linux, see this [post]({{% relref "easy-snake-case-linux" %}}) instead.
 
 One thing that I've always hated about snake_case naming style is that I've always found typing an underscore (_) to be an awkward keystroke. The best thing that I've done to make snake_case typing easier is to use [AutoHotkey](https://www.autohotkey.com/) to create a hotkey to insert an underscore when typing <kbd><kbd>SHIFT</kbd>+<kbd>SPACE</kbd></kbd>. Here is the AutoHotkey script:
 
