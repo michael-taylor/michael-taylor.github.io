@@ -108,7 +108,7 @@ menu:
       weight: 10
     - identifier: useful
       name: Useful stuff
-      url: /useful/
+      url: /useful-stuff/
       weight: 20
     - identifier: about
       name: About me
