@@ -80,8 +80,6 @@ siteRunning = "網站運行中……"
 
 # === partials/comment.html ===
 [comment]
-valineLang = "zh-TW"
-valinePlaceholder = "你的評論……"
 facebookLanguageCode = "zh-TW"
 # === partials/comment.html ===
 

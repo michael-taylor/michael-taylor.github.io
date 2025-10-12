@@ -83,8 +83,6 @@ siteRunning = "वेबसाइट चल रही है ..."
 
 # === partials/comment.html ===
 [comment]
-valineLang = "hi"
-valinePlaceholder = "आपकी टिप्पणी ..."
 facebookLanguageCode = "hi"
 # === partials/comment.html ===
 

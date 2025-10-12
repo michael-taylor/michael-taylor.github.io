@@ -81,8 +81,6 @@ siteRunning = "Trang web đang chạy ..."
 
 # === partials/comment.html ===
 [comment]
-valineLang = "en" # Valine không hỗ trợ tiếng Việt
-valinePlaceholder = "Bình luận của bạn ..."
 facebookLanguageCode = "vi"
 # === partials/comment.html ===
 

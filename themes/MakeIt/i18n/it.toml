@@ -82,8 +82,6 @@ siteRunning = "Sito in esecuzione ..."
 
 # === partials/comment.html ===
 [comment]
-valineLang = "en" # Valine non supporta l'italiano
-valinePlaceholder = "Il tuo commento ..."
 facebookLanguageCode = "it"
 # === partials/comment.html ===
 

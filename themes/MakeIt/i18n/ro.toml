@@ -82,8 +82,6 @@ siteRunning = "Site-ul rulează ..."
 
 # === partials/comment.html ===
 [comment]
-valineLang = "en" # Valine nu suporta romana
-valinePlaceholder = "Comentariul dvs ..."
 facebookLanguageCode = "ro_RO"
 # === partials/comment.html ===
 
