@@ -1,6 +1,6 @@
 baseURL: "https://mrt.dev"
 title: MisterTea's Blog
-theme: [ "hugo-notice", "PaperMod" ]
+theme: "MakeIt"
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -12,49 +12,73 @@ minify:
   minifyOutput: true
 
 params:
-  homeInfoParams:
-    Title: "MisterTea's Blog :wave:"
-    Content: "Hello. I'm Michael R. Taylor, MRT (MisterTea), and I've been a professional software engineer for over 20 years. Here are my thoughts on various things in the industry."
+  home:
+    profile:
+      enable: true
+      social: true
+      title: "MisterTea's Blog :wave:"
+      disclaimer: "Hello. I'm Michael R. Taylor, MRT (MisterTea), and I've been a professional software engineer for over 20 years. Here are my thoughts on various things in the industry."
+      avatarURL: /images/profile.png
 
-  socialIcons:
-    - name: github
-      url: "https://github.com/michael-taylor"
-    - name: gitlab
-      url: "https://invent.kde.org/mtaylor"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/michaelrichardtaylor/"
-    - name: steam
-      url: "https://steamcommunity.com/id/mrteng79/"
-    - name: gog
-      url: "https://www.gog.com/u/MisterTea2004"
-    - name: xbox
-      url: "https://www.xbox.com/en-US/play/user/MisterTea04"
-    - name: discord
-      url: "https://discordapp.com/users/mister.tea2004"
+  social:
+    github:
+      id: michael-taylor
+      weight: 1
+    gitlab:
+      id: mtaylor
+      prefix: https://invent.kde.org/
+      weight: 2
+    linkedin: 
+      id: michaelrichardtaylor
+      weight: 3
+    steam:
+      id: mrteng79
+      weight: 4
+    gog:
+      id: MisterTea2004
+      weight: 5
+    xbox: 
+      id: MisterTea04
+      weight: 6
+    youtubechannel:
+      id: "@MisterTea04"
+      prefix: https://youtube.com/
+      weight: 7
+    discord: 
+      id: mister.tea2004
+      weight: 8
 
   env: production
-  keywords: [Blog, Portfolio, Programming, Software Engineering]
-  author: Michael
+  description: "The blog of a professional software engineer with over 20 years of experience"
+  keywords: [Blog, Portfolio, Programming, Software Engineering, Linux]
+  author:
+    name: Michael R. Taylor
+    email: michael@atomic.city
+    link: https://mrt.dev
   DateFormat: "January 2, 2006"
   defaultTheme: auto
 
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  UseHugoToc: true
-  disableScrollToTop: false
-  showtoc: true
+  header:
+    desktopMode: sticky
+    mobileMode: auto
+    title:
+      logo: /images/profile.png
 
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
-    keys: ["title", "permalink", "summary", "content"]
+  search:
+    enable: true
+    type: fuse
+    fuse:
+      isCaseSensitive: false
+      shouldSort: true
+      location: 0
+      distance: 1000
+      threshold: 0.4
+      minMatchCharLength: 0
+      # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+      keys: ["title", "permalink", "summary", "content"]
+
+  enableGitInfo: false
+  externalIcon: true
 
 menu:
   main:
@@ -70,23 +94,30 @@ menu:
       name: About me
       url: /about/
       weight: 30
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 40
 
-pygmentsUseClasses: true
-markup:
-  highlight:
-    noClasses: false
+# pygmentsUseClasses: true
 
 # For Github pages
 caches:
   images:
     dir: :cacheDir/images
 
+markup:
+  merge: shallow
+  highlight:
+    codeFences: true
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: false
+    guessSyntax: true
+
 outputs:
+  _merge: shallow
   home:
     - HTML
     - RSS
     - JSON # necessary for search
+    - search
+
+taxonomies:
+  _merge: shallow
