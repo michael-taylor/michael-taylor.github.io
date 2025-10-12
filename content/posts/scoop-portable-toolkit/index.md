@@ -1,6 +1,6 @@
 ---
 title: "Using Scoop to Create a Portable Toolkit"
-description: "Scoop provides a wonderful foundation for creating a portable developer's toolkit on Windows systems."
+summary: "Scoop provides a wonderful foundation for creating a portable developer's toolkit on Windows systems"
 date: "2023-08-15"
 tags:
   - Scoop

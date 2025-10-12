@@ -5,6 +5,7 @@ summary: "Fixing a tough-to-trace problem with keyd on Linux"
 date: "2025-10-10"
 tags:
   - Linux
+  - Developer Tips
 ---
 
 I've been facing a strange problem lately that was tough to trace down. My <kbd>RIGHT SHIFT</kbd> key was acting like a <kbd>LEFT SHIFT</kbd> key. At first I didn't know that's what was happening. I figured that I was seeing some issues with Wayland on Linux and global keyboard shortcuts. However, I recently got a new keyboard and was using the [Via](https://caniusevia.com/) keyboard mapping software and saw that my <kbd>RIGHT SHIFT</kbd> was sending <kbd>LEFT SHIFT</kbd> signals.

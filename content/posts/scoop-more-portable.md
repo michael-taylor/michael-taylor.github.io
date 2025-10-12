@@ -1,5 +1,6 @@
 ---
 title: "Making the Portable Toolkit More Portable"
+summary: "One problem that may appear when creating a toolkit with [Scoop](https://scoop.sh) to be used between computers is the minor configuration differences necessary on different computers"
 description: "How to handle minor differences in configuration files between computers."
 date: "2023-08-18"
 tags:
