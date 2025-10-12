@@ -18,6 +18,20 @@ I hope to improve my writing and communication skills. Hopefully, this blog can 
 
 ## FAQ
 
+### Comments aren't allowed on this blog. How can I give feedback?
+
+I'm not very active on most social media, but I almost always have my Discord and Telegram apps open. You can also message me on Bluesky.
+
+| Service | Account |
+| ------- | ------- |
+| Discord | mister.tea2004 |
+| Telegram | https://t.me/mistertea04 |
+| Bluesky | https://bsky.app/profile/atomic.city |
+
 ### Where does "MisterTea" come from? It seems so unnecessarily formal.
 
 MisterTea is simply a pronunciation of my initials, MRT, with the "T" stylized as Tea. Iced, sweet tea has long been my drink of choice.
+
+### This blog's theme is lovely. What is it?
+
+This blog is using the wonderful [FixIt](https://github.com/hugo-fixit/FixIt) theme.

@@ -51,6 +51,12 @@ params:
     discord: 
       id: mister.tea2004
       weight: 8
+    bluesky:
+      id: atomic.city
+      weight: 9
+    telegram:
+      id: mistertea04
+      weight: 10
 
   env: production
   description: "The blog of a professional software engineer with over 20 years of experience"
