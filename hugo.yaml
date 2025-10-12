@@ -36,9 +36,13 @@ params:
       weight: 4
     gog:
       id: MisterTea2004
+      icon:
+        simpleicons: gogdotcom
       weight: 5
     xbox: 
       id: MisterTea04
+      icon:
+        simpleicons: xbox
       weight: 6
     youtubechannel:
       id: "@MisterTea04"
