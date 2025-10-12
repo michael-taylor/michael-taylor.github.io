@@ -920,9 +920,6 @@ class FixIt {
       gitalk.render('gitalk');
       return gitalk;
     }
-    if (this.config.comment.valine) {
-      return new Valine(this.config.comment.valine);
-    }
     if (this.config.comment.waline) {
       if (this.config.comment.expired) {
         this.config.comment.waline.pageview && Waline.pageviewCount({
