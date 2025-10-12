@@ -920,16 +920,6 @@ class FixIt {
       gitalk.render('gitalk');
       return gitalk;
     }
-    if (this.config.comment.waline) {
-      if (this.config.comment.expired) {
-        this.config.comment.waline.pageview && Waline.pageviewCount({
-          serverURL: this.config.comment.waline.serverURL,
-          path: window.location.pathname
-        });
-        return;
-      }
-      return Waline.init(this.config.comment.waline);
-    }
     if (this.config.comment.utterances) {
       const utterancesConfig = this.config.comment.utterances;
       const script = document.createElement('script');

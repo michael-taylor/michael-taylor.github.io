@@ -113,67 +113,6 @@
       </noscript>
     {{- end -}}
 
-    {{- /* Waline Comment System */ -}}
-    {{- /* see https://waline.js.org/reference/component.html */ -}}
-    {{- $waline := $comment.waline | default dict -}}
-    {{- if $waline.enable -}}
-      <div id="waline" class="comment"></div>
-      {{- $source := $cdn.walineCSS | default "lib/waline/waline.css" -}}
-      {{- dict "Source" $source "Fingerprint" $fingerprint | dict "Page" . "Data" | partial "store/style.html" -}}
-      {{- $source := $cdn.walineJS | default "lib/waline/waline.umd.js" -}}
-      {{- dict "Source" $source "Fingerprint" $fingerprint "Defer" true | dict "Page" . "Data" | partial "store/script.html" -}}
-      {{- $commentConfig = dict "el" "#waline" "serverURL" $waline.serverURL "lang" .Lang "dark" "html[data-theme='dark']" | dict "waline" | merge $commentConfig -}}
-      {{- $commentConfig = dict "copyright" true "imageUploader" false "highlighter" false "texRenderer" false "search" false | dict "waline" | merge $commentConfig -}}
-      {{- with $waline.pageview -}}
-        {{- $commentConfig = dict "pageview" . | dict "waline" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $waline.emoji -}}
-        {{- $commentConfig = dict "emoji" . | dict "waline" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $waline.meta -}}
-        {{- $commentConfig = dict "meta" . | dict "waline" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $waline.requiredMeta -}}
-        {{- $commentConfig = dict "requiredMeta" . | dict "waline" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $waline.login -}}
-        {{- $commentConfig = dict "login" . | dict "waline" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $waline.wordLimit -}}
-        {{- $commentConfig = dict "wordLimit" . | dict "waline" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $waline.pageSize -}}
-        {{- $commentConfig = dict "pageSize" . | dict "waline" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $waline.imageUploader -}}
-        {{- $commentConfig = dict "imageUploader" . | dict "waline" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $waline.highlighter -}}
-        {{- $commentConfig = dict "highlighter" . | dict "waline" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $waline.comment -}}
-        {{- $commentConfig = dict "comment" . | dict "waline" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $waline.texRenderer -}}
-        {{- $commentConfig = dict "texRenderer" . | dict "waline" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $waline.search -}}
-        {{- $commentConfig = dict "search" . | dict "waline" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $waline.recaptchaV3Key -}}
-        {{- $commentConfig = dict "recaptchaV3Key" . | dict "waline" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $waline.turnstileKey -}}
-        {{- $commentConfig = dict "turnstileKey" . | dict "waline" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $waline.reaction -}}
-        {{- $commentConfig = dict "reaction" . | dict "waline" | merge $commentConfig -}}
-      {{- end -}}
-      <noscript>
-        Please enable JavaScript to view the comments powered by <a href="https://waline.js.org/" rel="external nofollow noopener noreferrer">Waline</a>.
-      </noscript>
-    {{- end -}}
-
     {{- /* Facebook Comment System */ -}}
     {{- $facebook := $comment.facebook | default dict -}}
     {{- if $facebook.enable -}}
