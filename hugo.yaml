@@ -12,11 +12,20 @@ minify:
   minifyOutput: true
 
 params:
+  description: "The blog of a professional software engineer with over 20 years of experience"
+  keywords: [Blog, Portfolio, Programming, Software Engineering, Linux]
+
+  author:
+    name: Michael R. Taylor
+    email: michael@atomic.city
+    link: https://mrt.dev
+
   home:
     profile:
       enable: true
       social: true
       title: ":wave: MisterTea's Blog"
+      subtitle: "These are the voyages..."
       disclaimer: "Hello. I'm Michael R. Taylor, MRT (MisterTea), and I've been a professional software engineer for over 20 years. Here are my thoughts on various things in the industry."
       avatarURL: /images/profile.png
 
@@ -58,16 +67,6 @@ params:
       id: mistertea04
       weight: 10
 
-  env: production
-  description: "The blog of a professional software engineer with over 20 years of experience"
-  keywords: [Blog, Portfolio, Programming, Software Engineering, Linux]
-  author:
-    name: Michael R. Taylor
-    email: michael@atomic.city
-    link: https://mrt.dev
-  DateFormat: "January 2, 2006"
-  defaultTheme: auto
-
   header:
     desktopMode: sticky
     mobileMode: auto
@@ -100,6 +99,10 @@ params:
   enableGitInfo: false
   externalIcon: true
 
+  env: production
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+
 menu:
   main:
     - identifier: tags
@@ -115,13 +118,8 @@ menu:
       url: /about/
       weight: 30
 
-# For Github pages
-caches:
-  images:
-    dir: :cacheDir/images
-
 markup:
-  merge: shallow
+  _merge: shallow
   highlight:
     codeFences: true
     lineNos: true
@@ -142,3 +140,8 @@ outputs:
 
 taxonomies:
   _merge: shallow
+
+# For Github pages
+caches:
+  images:
+    dir: :cacheDir/images
