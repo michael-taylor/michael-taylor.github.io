@@ -109,8 +109,6 @@ menu:
       url: /about/
       weight: 30
 
-# pygmentsUseClasses: true
-
 # For Github pages
 caches:
   images:
@@ -124,6 +122,9 @@ markup:
     lineNumbersInTable: true
     noClasses: false
     guessSyntax: true
+  goldmark:
+    renderer:
+      unsafe: true
 
 outputs:
   _merge: shallow
