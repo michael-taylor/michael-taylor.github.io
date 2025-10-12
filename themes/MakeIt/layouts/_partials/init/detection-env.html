@@ -25,7 +25,4 @@
   {{- if ne .Site.Params.dev.enable true -}}
     {{- .Site.Store.Set "devOpts" dict -}}
   {{- end -}}
-  {{- if eq .Site .Sites.Default -}}
-    {{- warnf "FixIt %v\n%v\n\n" (hugo.Store.Get "version") (T "init.devEnvWarn") -}}
-  {{- end -}}
 {{- end -}}
