@@ -954,30 +954,6 @@ class FixIt {
       this.switchThemeEventSet.add(this._utterancesOnSwitchTheme);
       return;
     }
-    if (this.config.comment.twikoo) {
-      const twikooConfig = this.config.comment.twikoo;
-      if (twikooConfig.lightgallery) {
-        twikooConfig.onCommentLoaded = () => {
-          this.initCommentLightGallery('.tk-comments .tk-content', 'img:not(.tk-owo-emotion)');
-        };
-      }
-      twikoo.init(twikooConfig);
-      if (twikooConfig.commentCount) {
-        // https://twikoo.js.org/api.html#get-comments-count
-        twikoo
-          .getCommentsCount({
-            envId: twikooConfig.envId,
-            region: twikooConfig.region,
-            urls: [window.location.pathname],
-            includeReply: false
-          })
-          .then(function (response) {
-            const twikooCommentCount = document.getElementById('twikoo-comment-count');
-            if (twikooCommentCount) twikooCommentCount.innerHTML = response[0].count;
-          });
-      }
-      return;
-    }
     if (this.config.comment.giscus) {
       const giscusConfig = this.config.comment.giscus;
       this._giscusOnSwitchTheme = this._giscusOnSwitchTheme || (() => {

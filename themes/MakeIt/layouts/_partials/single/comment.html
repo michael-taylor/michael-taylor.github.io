@@ -272,31 +272,6 @@
       </noscript>
     {{- end -}}
 
-    {{- /* Twikoo Comment System */ -}}
-    {{- /* TODO review lang config https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js */ -}}
-    {{- $twikoo := $comment.twikoo | default dict -}}
-    {{- if $twikoo.enable -}}
-      <div id="twikoo"></div>
-      {{- $source := $cdn.twikooJS | default "lib/twikoo/twikoo.all.min.js" -}}
-      {{- dict "Source" $source "Fingerprint" $fingerprint "Defer" true | dict "Page" . "Data" | partial "store/script.html" -}}
-      {{- $commentConfig = dict "el" "#twikoo" "envId" $twikoo.envId "lang" .Lang | dict "twikoo" | merge $commentConfig -}}
-      {{- with $twikoo.region -}}
-        {{- $commentConfig = dict "region" . | dict "twikoo" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $twikoo.path -}}
-        {{- $commentConfig = dict "path" . | dict "twikoo" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $twikoo.commentCount -}}
-        {{- $commentConfig = dict "commentCount" . | dict "twikoo" | merge $commentConfig -}}
-      {{- end -}}
-      {{- with $twikoo.lightgallery -}}
-        {{- $commentConfig = dict "lightgallery" . | dict "twikoo" | merge $commentConfig -}}
-      {{- end -}}
-      <noscript>
-        Please enable JavaScript to view the comments powered by <a href="https://twikoo.js.org/" rel="external nofollow noopener noreferrer">Twikoo</a>.
-      </noscript>
-    {{- end -}}
-
     {{- /* Giscus Comment System */ -}}
     {{- $giscus := $comment.giscus | default dict -}}
     {{- if $giscus.enable -}}
@@ -336,7 +311,7 @@
   </div>
   {{- /* lightgallery for Artalk and Twikoo */ -}}
   {{- $params := partial "function/params.html" -}}
-  {{- if not $params.lightgallery | and (($artalk.enable | and $artalk.lightgallery) | or ($twikoo.enable | and $twikoo.lightgallery)) -}}
+  {{- if not $params.lightgallery | and (($artalk.enable | and $artalk.lightgallery)) -}}
     {{- $source := $cdn.lightgalleryCSS | default "lib/lightgallery/css/lightgallery-bundle.min.css" -}}
     {{- dict "Source" $source "Fingerprint" $fingerprint | dict "Page" . "Data" | partial "store/style.html" -}}
     {{- $source := $cdn.lightgalleryJS | default "lib/lightgallery/lightgallery.min.js" -}}
@@ -344,16 +319,6 @@
     {{- $source := $cdn.lightgalleryThumbnailJS | default "lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" -}}
     {{- dict "Source" $source "Fingerprint" $fingerprint "Defer" true | dict "Page" . "Data" | partial "store/script.html" -}}
     {{- $source := $cdn.lightgalleryZoomJS | default "lib/lightgallery/plugins/zoom/lg-zoom.min.js" -}}
-    {{- dict "Source" $source "Fingerprint" $fingerprint "Defer" true | dict "Page" . "Data" | partial "store/script.html" -}}
-  {{- end -}}
-  {{- /* KaTeX for Twikoo */ -}}
-  {{- if $twikoo.enable | and $twikoo.katex -}}
-    {{- $katexVersion := "0.16.22" -}}
-    {{- $source := printf "https://cdn.jsdelivr.net/npm/katex@%s/dist/katex.min.css" $katexVersion -}}
-    {{- dict "Source" $source "Fingerprint" $fingerprint | dict "Page" . "Data" | partial "store/style.html" -}}
-    {{- $source := printf "https://cdn.jsdelivr.net/npm/katex@%s/dist/katex.min.js" $katexVersion -}}
-    {{- dict "Source" $source "Fingerprint" $fingerprint "Defer" true | dict "Page" . "Data" | partial "store/script.html" -}}
-    {{- $source := printf "https://cdn.jsdelivr.net/npm/katex@%s/dist/contrib/auto-render.min.js" $katexVersion -}}
     {{- dict "Source" $source "Fingerprint" $fingerprint "Defer" true | dict "Page" . "Data" | partial "store/script.html" -}}
   {{- end -}}
 {{- end -}}

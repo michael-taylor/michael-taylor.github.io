@@ -90,10 +90,6 @@
           <span class="comment-visitors" data-flag-title="{{ $title }}">
             {{- $visitorIcon }}<span data-path="{{ .RelPermalink }}" class="waline-pageview-count">-</span>&nbsp;{{ T "single.views" }}
           </span>&nbsp;
-        {{- else if $comment.enable | and $comment.twikoo.enable | and $comment.twikoo.visitor -}}
-          <span id="{{ .RelPermalink }}" class="comment-visitors" data-flag-title="{{ $title }}">
-            {{- $visitorIcon }}<span id="twikoo_visitors">-</span>&nbsp;{{ T "single.views" }}
-          </span>&nbsp;
         {{- else if .Site.Params.busuanzi.enable | and .Site.Params.busuanzi.pageViews | and hugo.IsProduction -}}
           <span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="{{ $title }}">
             {{- $visitorIcon }}<span id="busuanzi_value_page_pv">-</span>&nbsp;{{ T "single.views" }}
@@ -112,10 +108,6 @@
           {{- else if $comment.waline.enable | and $comment.waline.comment -}}
             <span class="comment-count" data-flag-title="{{ $title }}">
               {{ $commentIcon }}<span data-path="{{ .RelPermalink }}" class="waline-comment-count">-</span>&nbsp;{{ T "single.comments" }}
-            </span>&nbsp;
-          {{- else if $comment.twikoo.enable | and $comment.twikoo.commentCount -}}
-            <span id="{{ .RelPermalink }}" class="comment-count" data-flag-title="{{ $title }}">
-              {{ $commentIcon }}<span id="twikoo-comment-count">-</span>&nbsp;{{ T "single.comments" }}
             </span>&nbsp;
           {{- end -}}
         {{- end -}}
