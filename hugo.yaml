@@ -81,6 +81,16 @@ params:
       # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
       keys: ["title", "permalink", "summary", "content"]
 
+  page:
+    share:
+      enable: true
+      twitter: true
+      facebook: true
+      linkedin: true
+      hackernews: true
+      reddit: true
+      weibo: false
+
   enableGitInfo: false
   externalIcon: true
 
