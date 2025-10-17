@@ -68,6 +68,12 @@ params:
     telegram:
       id: mistertea04
       weight: 10
+    mastodon:
+      id: "@mistertea04"
+      weight: 11
+    matrix:
+      id: "@mistertea:matrix.org"
+      weight: 12
 
   header:
     desktopMode: sticky

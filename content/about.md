@@ -20,13 +20,13 @@ I hope to improve my writing and communication skills. Hopefully, this blog can 
 
 ### Comments aren't allowed on this blog. How can I give feedback?
 
-I'm not very active on most social media, but I almost always have my Discord and Telegram apps open. You can also message me on Bluesky.
+I'm not very active on most social media, but I almost always have my Discord and Matrix apps open. You can also message me on Mastodon.
 
 | Service | Account |
 | ------- | ------- |
 | Discord | mister.tea2004 |
-| Telegram | https://t.me/mistertea04 |
-| Bluesky | https://bsky.app/profile/mistertea2004.bsky.social |
+| Matrix | https://matrix.to/#/@mistertea:matrix.org |
+| Mastodon | https://mastodon.social/@mistertea04 |
 
 ### Where does "MisterTea" come from? It seems so unnecessarily formal.
 
