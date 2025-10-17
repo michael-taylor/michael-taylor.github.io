@@ -38,6 +38,10 @@
   <link rel="alternate" type="application/feed+json" href="{{ .Permalink }}" title="{{ $title }}" />
 {{- end -}}
 
+{{- /* For Mastodon */ -}}
+<link rel="me" href="https://mastodon.social/@mistertea04" title="Mastodon"/>
+<meta name="fediverse:creator" content="@mistertea04@mastodon.social">
+
 {{- /* config.min.css */ -}}
 {{- $options := dict "Source" "css/config.template.scss" "Template" "css/config.scss" "Fingerprint" $fingerprint -}}
 {{- $toCSS := dict "targetPath" "css/config.min.css" "enableSourceMap" true -}}
